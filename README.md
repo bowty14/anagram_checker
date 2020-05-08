@@ -6,7 +6,7 @@
 
 ## Description
 
-This app will check to see if user input is an anagram, antigram or neither.
+This app will check to see if user input is an anagram or antigram.
 
 ## Specifications
 
