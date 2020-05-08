@@ -40,8 +40,9 @@ _Have a bug or an issue with this application? [Open a new issue](https://github
 _*Ruby,*_
 _*gem rspec*_
 _*gem pry*_
+_*gem lolize*_
 ### License
 
 *This software is licensed under the MIT license* 
 
-Copyright (c) 2020 **Author(s)**
+Copyright (c) 2020 **Tyler Bowerman**

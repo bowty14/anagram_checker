@@ -5,7 +5,7 @@ require ('anagram_checker.rb')
 describe('Anagram#')do
   it('Will output error message if word is not entered') do
     word = Anagram.new('ggg', 'ttt')
-    expect(word.vowel()).to(eq("This is not a word"))
+    expect(word.vowel()).to(eq("This is not a word, ignore the prompt below!"))
   end
 
   it('Will check to see that what is inputted is a word') do
