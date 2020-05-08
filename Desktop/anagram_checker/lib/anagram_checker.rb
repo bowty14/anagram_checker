@@ -14,15 +14,25 @@ class Anagram
     end
   end
 
-  def ana_checker
-    anagram = true
-    if word1 != word2
+  def antigram
+    antigram = true
+    for letters in @word1 do
+      if @word2.include?(letters)
+        antigram = false
+        break
+      end
+    end
+    if antigram
       return "This is an antigram, nothing matches"
     end
-    if anagram
+    return "This is not an anagram or an antigram, try again."
+  end
+
+  def ana_checker
+    if @word1 == @word2
       return "This is an anagram, nice work!"
     end
-    return "This is not an anagram or a antigram"
+    return "These don't seem to match, try again."
   end
 end
 

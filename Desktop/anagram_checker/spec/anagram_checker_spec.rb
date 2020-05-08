@@ -15,7 +15,7 @@ describe('Anagram#')do
 
   it('Will check to see if two word are not anagrams') do
     antigram = Anagram.new('hi', 'bye')
-    expect(antigram.ana_checker()).to(eq("This is an antigram, nothing matches"))
+    expect(antigram.antigram()).to(eq("This is an antigram, nothing matches"))
   end
 
   it('Will check if input is a anagram regardless of capitalization') do 
@@ -30,6 +30,6 @@ describe('Anagram#')do
 
   it('Will output not an anagram or antigram based on input') do 
     neither = Anagram.new('hello','spring')
-    expect(neither.ana_checker()).to(eq("This is not an anagram or an antigram"))
+    expect(neither.antigram()).to(eq("This is not an anagram or an antigram, try again."))
   end
 end
