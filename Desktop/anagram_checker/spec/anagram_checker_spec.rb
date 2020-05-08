@@ -7,6 +7,11 @@ describe('Anagram#')do
     word = Anagram.new('ggg', 'ttt')
     expect(word.vowel()).to(eq("This is not a word"))
   end
+  
+  it('Will check to see that what is inputted is a word') do
+    word = Anagram.new('','elbow')
+    expect(word.vowel()).to(eq("This is a word.")
+      end
 
   it('Will check to see if two words are anagrams') do
     anagram = Anagram.new('ruby', 'bury')
