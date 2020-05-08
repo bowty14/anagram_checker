@@ -25,6 +25,10 @@ describe('Anagram#')do
 
   it('Will check if inputted phrases are anagrams') do 
     phrase = Anagram.new('Stressed angel','Glean Desserts')
-    expect(phrase.ana_checker()).to(eq("This is an anagram, nice "))
+    expect(phrase.ana_checker()).to(eq("This is an anagram, nice work!"))
+  end
+
+  it('Will output not an anagram or antigram based on input') do 
+    
   end
 end
