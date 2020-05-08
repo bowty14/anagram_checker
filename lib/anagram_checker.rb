@@ -10,7 +10,7 @@ class Anagram
     if  @word1.any?{ |x| ["a", "e", "i", "o", "u"].include?(x)} || @word2.any?{ |x| ["a", "e", "i", "o", "u"].include?(x)}
       return "This is a word."
     else 
-      return "This is not a word, ignore the prompt below!"
+      return "This is not a word, ignore the prompt below! Please try again!"
     end
   end
   def ana_checker

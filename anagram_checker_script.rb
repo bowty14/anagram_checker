@@ -12,7 +12,7 @@ word2 = gets.chomp
 puts " "
 anagram = Anagram.new(word1, word2)
 puts anagram.vowel
-puts ' '
+puts " "
 puts anagram.ana_checker
 
 
