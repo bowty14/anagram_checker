@@ -10,12 +10,13 @@ class Anagram
     if  @word1.any?{ |x| ["a", "e", "i", "o", "u"].include?(x)} || @word2.any?{ |x| ["a", "e", "i", "o", "u"].include?(x)}
       return "This is a word."
     else 
-      return "This is not a word"
+      return "This is not a word, ignore the prompt below!"
     end
   end
   def ana_checker
+    
     if @word1 == @word2
-      return "This is an anagram, nice work!"
+        return "This is an anagram, nice work!"
     end
     return "These two words have no matching letters and are therefore antigrams"
   end
