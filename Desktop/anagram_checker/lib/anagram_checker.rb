@@ -13,6 +13,14 @@ class Anagram
       return "This is not a word"
     end
   end
+
+  def ana_checker
+    anagram = true
+    if word1 != word2
+      return "This is not an anagram, please try again"
+    end
+    if anagram
+      return "This is an anagram, nice work!"
 end
 
 
