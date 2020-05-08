@@ -25,7 +25,7 @@ class Anagram
     if antigram
       return "This is an antigram, nothing matches"
     end
-    return "This is not an anagram or an antigram, try again."
+    return "It seems as though you may have entered the same word twice, or maybe you entered a palindrome"
   end
 
   def ana_checker

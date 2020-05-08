@@ -29,7 +29,7 @@ describe('Anagram#')do
   end
 
   it('Will output not an anagram or antigram based on input') do 
-    neither = Anagram.new('hello','spring')
-    expect(neither.antigram()).to(eq("This is not an anagram or an antigram, try again."))
+    neither = Anagram.new('racecar','racecar')
+    expect(neither.antigram()).to(eq("It seems as though you may have entered the same word twice, or maybe you entered a palindrome"))
   end
 end
