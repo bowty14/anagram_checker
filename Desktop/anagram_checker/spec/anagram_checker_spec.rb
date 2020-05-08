@@ -14,11 +14,17 @@ describe('Anagram#')do
   end
 
   it('Will check to see if two word are not anagrams') do
-    not_anagram = Anagram.new('hi', 'bye')
-    expect(not_anagram.ana_checker()).to(eq("This is an anti-gram, nothing matches"))
+    antigram = Anagram.new('hi', 'bye')
+    expect(antigram.ana_checker()).to(eq("This is an antigram, nothing matches"))
   end
+
   it('Will check if input is a anagram regardless of capitalization') do 
     cap_anagram = Anagram.new('RubY','BurY')
     expect(cap_anagram.ana_checker()).to(eq("This is an anagram, nice work!"))
+  end
+
+  it('Will check if inputted phrases are anagrams') do 
+    phrase = Anagram.new('Stressed angel','Glean Desserts')
+    expect(phrase.ana_checker()).to(eq("This is an anagram, nice "))
   end
 end

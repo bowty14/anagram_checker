@@ -17,11 +17,12 @@ class Anagram
   def ana_checker
     anagram = true
     if word1 != word2
-      return "This is an anti-gram, nothing matches"
+      return "This is an antigram, nothing matches"
     end
     if anagram
       return "This is an anagram, nice work!"
     end
+    return "This is not an anagram or a antigram"
   end
 end
 
