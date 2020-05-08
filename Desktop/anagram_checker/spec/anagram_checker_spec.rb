@@ -12,4 +12,9 @@ describe('Anagram#')do
     anagram = Anagram.new('ruby', 'bury')
     expect(anagram.ana_checker()).to(eq("This is an anagram, nice work!"))
   end
+
+  it('Will check to see if two word are not anagrams') do
+    not_anagram = Anagram.new('hi', 'bye')
+    expect(not_anagram.ana_checker()).to(eq("This is not an anagram, please try "))
+  end
 end
