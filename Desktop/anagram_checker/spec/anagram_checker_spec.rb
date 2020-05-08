@@ -15,7 +15,7 @@ describe('Anagram#')do
 
   it('Will check to see if two word are not anagrams') do
     antigram = Anagram.new('hi', 'bye')
-    expect(antigram.antigram()).to(eq("This is an antigram, nothing matches"))
+    expect(antigram.ana_checker()).to(eq("This is an antigram, nothing matches"))
   end
 
   it('Will check if input is a anagram regardless of capitalization') do 
@@ -26,10 +26,5 @@ describe('Anagram#')do
   it('Will check if inputted phrases are anagrams') do 
     phrase = Anagram.new('Stressed angel','Glean Desserts')
     expect(phrase.ana_checker()).to(eq("This is an anagram, nice work!"))
-  end
-
-  it('Will output not an anagram or antigram based on input') do 
-    neither = Anagram.new('racecar','racecar')
-    expect(neither.antigram()).to(eq("It seems as though you may have entered the same word twice, or maybe you entered a palindrome"))
   end
 end
