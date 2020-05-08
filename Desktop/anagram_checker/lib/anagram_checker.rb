@@ -21,6 +21,8 @@ class Anagram
     end
     if anagram
       return "This is an anagram, nice work!"
+    end
+  end
 end
 
 
