@@ -29,6 +29,7 @@ describe('Anagram#')do
   end
 
   it('Will output not an anagram or antigram based on input') do 
-    
+    neither = Anagram.new('hello','spring')
+    expect(neither.ana_checker()).to(eq("This is not an anagram or an antigram"))
   end
 end
