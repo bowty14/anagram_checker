@@ -14,8 +14,9 @@ class Anagram
     end
   end
   def ana_checker
+    
     if @word1 == @word2
-      return "This is an anagram, nice work!"
+        return "This is an anagram, nice work!"
     end
     return "These two words have no matching letters and are therefore antigrams"
   end
