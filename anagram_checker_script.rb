@@ -1,7 +1,8 @@
 #!/usr/bin/env/ ruby
 require('./lib/anagram_checker.rb')
+require('lolize/auto')
 
-puts "This program is designed to check if two words are either an anagram or an antigram"
+puts "This program checks to see if two words are either an anagram or an antigram"
 puts " "
 puts "Plese enter your first word"
 word1 = gets.chomp
