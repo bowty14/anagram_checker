@@ -28,7 +28,7 @@ _To Download Manually:_
 * Click downloaded file to unzip.
 * Open your terminal and type cd desktop (if you're not already there) once there type cd anagram_checker.
 Then once inside the project_gen folder you will want to type this command 'ruby anagram_checker_script.rb'. 
-This will run the Ruby script in the folder and you will prompted to enter a name for the project you wish to create.
+This will run the Ruby script in the folder and you will prompted to enter two words for the program to compare.
 
 ## Known Bugs
 No known bugs at this time.
