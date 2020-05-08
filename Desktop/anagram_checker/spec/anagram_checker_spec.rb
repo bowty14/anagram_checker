@@ -9,7 +9,7 @@ describe('Anagram#')do
   end
   
   it('Will check to see that what is inputted is a word') do
-    word = Anagram.new('','elbow')
+    word = Anagram.new('below','elbow')
     expect(word.vowel()).to(eq("This is a word.")
       end
 
