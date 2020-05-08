@@ -17,4 +17,8 @@ describe('Anagram#')do
     not_anagram = Anagram.new('hi', 'bye')
     expect(not_anagram.ana_checker()).to(eq("This is not an anagram, please try again"))
   end
+  it('Will check if input is a anagram regardless of capitalization') do 
+    cap_anagram = Anagram.new('RubY','BurY')
+    expect(cap_anagram.ana_checker()).to(eq("This is an"))
+  end
 end
