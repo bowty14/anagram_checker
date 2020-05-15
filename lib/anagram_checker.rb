@@ -2,25 +2,41 @@ class Anagram
   attr_accessor(:word1, :word2)
 
   def initialize(word1, word2)
-    @word1 = word1.downcase.gsub(/[^a-z0-9]/i, '').split(//).sort
-    @word2 = word2.downcase.gsub(/[^a-z0-9]/i, '').split(//).sort
+    @word1 = word1
+    @word2 = word2
   end
 
   def vowel
-    if  @word1.any?{ |x| ["a", "e", "i", "o", "u"].include?(x)} || @word2.any?{ |x| ["a", "e", "i", "o", "u"].include?(x)}
+    if  @word1.split(//).any?{ |x| ["a", "e", "i", "o", "u"].include?(x)} || @word2.split(//).any?{ |x| ["a", "e", "i", "o", "u"].include?(x)}
       return "This is a word."
     else 
-      return "This is not a word, ignore the prompt below! Please try again!"
+      return "This is not a word."
     end
   end
   def ana_checker
-    
-    if @word1 == @word2
-        return "This is an anagram, nice work!"
+    if @word1.downcase.gsub(/[^a-z0-9]/i, '').split(//).sort == @word2.downcase.gsub(/[^a-z0-9]/i, '').split(//).sort
+        true
+    else
+      false
     end
-    return "These two words have no matching letters and are therefore antigrams"
+  end
+    
+  def anti_checker
+    if word1.split('').none? {|x| word2.split('').include?(x)}
+    true
+    else
+      false
+    end
+  end
+
+  def word_check
+    if self.ana_checker == true
+      return "These are anagrams, nice work!"
+    elsif self.anti_checker == true
+      return "These words are neither antigrams or anagrams"
+    elsif self.anti_checker == false
+      return "These words share similar letters and could be antigrams."
+    end
   end
 end
 
-
- 
