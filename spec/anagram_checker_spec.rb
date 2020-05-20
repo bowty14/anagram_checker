@@ -55,14 +55,14 @@ describe('#Anagram')do
   describe('.word_check') do
     it('Will return "These words are neither antigrams or anagrams"if anti_checker is true') do
       check = Anagram.new('run','base')
-      expect(check.word_check()).to(eq("These words are neither antigrams or anagrams"))
+      expect(check.word_check()).to(eq("These words don't share similar letters and are antigrams."))
     end
   end
 
   describe('.word_check') do
     it('Will return "These words share similar letters and could be antigrams." if anti_checker is false') do
       check = Anagram.new('cat','bat')
-      expect(check.word_check()).to(eq("These words share similar letters and could be antigrams."))
+      expect(check.word_check()).to(eq("These words are neither antigrams or anagrams."))
     end
   end
 end
