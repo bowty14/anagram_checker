@@ -25,7 +25,7 @@ describe('#Anagram')do
   end
 
   describe('.anti_checker') do
-    it('Will output false if two word are antigrams') do
+    it('Will output true if two word are antigrams') do
       antigram = Anagram.new('cat', 'bat')
       expect(antigram.anti_checker()).to(eq(false))
     end
