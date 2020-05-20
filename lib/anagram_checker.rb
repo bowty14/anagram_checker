@@ -33,9 +33,9 @@ class Anagram
     if self.ana_checker == true
       return "These are anagrams, nice work!"
     elsif self.anti_checker == true
-      return "These words are neither antigrams or anagrams"
+      return "These words don't share similar letters and are antigrams."
     elsif self.anti_checker == false
-      return "These words share similar letters and could be antigrams."
+      return "These words are neither antigrams or anagrams"
     end
   end
 end

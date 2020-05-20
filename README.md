@@ -17,7 +17,7 @@ This app will check to see if user input is an anagram or antigram.
 |3.check to see if inputted words are anagrams|"ruby","bury"|"This is an anagram, nice work!"|
 |4.'Will check if input is a anagram regardless of capitalization'|"rUbY", "BlUe"|"This is anagram, nice work!"|
 |5.'Will check if inputted phrases are anagrams'|'Stressed angel','Glean Desserts'|"This is an anagram, nice work!"|
-|6.'Will check if inputted words are antigrams'|'blue','ruby'|"Thesse two words have no matching letters and are therefore antigrams"|
+|6.'Will check if inputted words are antigrams'|'soccer','rugby'|"These words don't share similar letters and are antigrams."|
 
 
 ## Setup/Installation Requirements
